@@ -1,0 +1,44 @@
+body {
+	align: center;
+}
+
+p {
+	color: black;
+	text-align: center;
+	font-family: palatino, helvetica, sans-serif;
+
+}
+
+h1 {
+	font-family: 'Satisfy', cursive;
+	font-size: 100px;
+	text-align: center;
+	color: rgb(200, 229, 36);
+}
+
+h2 {
+	font-family: 'palatino', helvetica, sans-serif;
+	font-size: 36px;
+	text-align: center;
+	color: rgb(70,71,71);
+}
+
+h3 {
+	font-family: 'palatino', helvetica, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	color: black;
+}
+
+img {
+	width: 100%
+}
+
+a {
+	color: rgb(200, 229, 36);
+}
+
+.bold-text {
+	font-weight: bold;
+}
+
