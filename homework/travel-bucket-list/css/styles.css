@@ -44,10 +44,15 @@ h2 {
 
 p {
 	text-align: left;
-	padding: 10px;
+	padding: 20px;
 }
 
 #navbar li {
 	display: inline;
 	padding: 10px;
+}
+
+#footer p {
+	font-weight: bold;
+	text-align: center;
 }
