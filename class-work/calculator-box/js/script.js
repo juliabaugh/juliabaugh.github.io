@@ -11,6 +11,18 @@ function redBackground () {
 $('#red').click(redBackground);
 
 
+function clear () {
+	$('#out').html(0)
+}
+$('#out').click(clear);
+
+function whiteBackground () {
+	$('#out').css('background-color', 'white')
+}
+$('#out').click(whiteBackground);
+
+
+
 function addA10 (){
 	var currentValue = $('#out').html();
 	currentValue = parseInt(currentValue);
@@ -59,5 +71,17 @@ function subtract30 (){
 }
 $('#n30').click(subtract30);
 
-//I'm sure there is a more simple way to write this!!
+
+/*I'm sure there is a more simple way of writing this! I was trying out another option below but didn't get it to work..
+
+function addValue (){
+	var currentValue = $('#out').html();
+	currentValue = parseInt(currentValue);
+	var x, y = $('#a10, #a20').html();
+	x = parseInt(x);
+	currentValue = currentValue + x;
+	$('#out').html(currentValue);
+}
+$('#a10, #a20').click(addValue);*/
+
 
