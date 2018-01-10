@@ -1,0 +1,80 @@
+body {
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+
+nav a {
+	text-decoration: none;
+	color: black;
+	padding: 0px 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+}
+
+nav {
+	text-align: center;
+	padding: 20px 200px;
+	background-color: rgba(255,255,255,.7);
+}
+
+#homepageNav {
+	position: fixed;
+}
+
+header {
+	text-align: center;
+}
+
+#logo {
+	width: 100px;
+	padding-top: 20px;
+}
+
+h3{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.mainPhoto img {
+	overflow: hidden;
+	width: 100%;
+
+}
+
+.mainPhoto {
+	text-align: center;
+}
+
+.pageTitle h1 {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+p {
+	margin: 0px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.projectPhotos {
+	display: inline-flex;
+}
+
+.projectPhotos img {
+	width: 50%;
+	height: 50%;
+	margin-top: 10px;
+	margin-right: 5px;
+}
+
+.project {
+	margin-bottom: 50px;
+}
