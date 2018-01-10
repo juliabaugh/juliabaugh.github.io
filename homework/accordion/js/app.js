@@ -10,5 +10,5 @@ $('.row').click(show);
 
 function show(){
 	var element = $(this).find('.wrapper');
-	$(element).slideToggle();
+	$(element).slideToggle('slow');
 }
