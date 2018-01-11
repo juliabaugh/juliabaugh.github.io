@@ -8,20 +8,23 @@ body {
 nav a {
 	text-decoration: none;
 	color: black;
-	padding: 0px 10px;
+	padding: 0px 20px;
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align: center;
 }
 
 nav {
 	text-align: center;
-	padding: 20px 200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	background-color: rgba(255,255,255,.7);
 }
 
 #homepageNav {
 	position: fixed;
+	width: 75%;
 }
+
 
 header {
 	text-align: center;
@@ -66,6 +69,8 @@ p {
 
 .projectPhotos {
 	display: inline-flex;
+	margin-bottom: 20px;
+	margin-top: 10px;
 }
 
 .projectPhotos img {
@@ -76,5 +81,82 @@ p {
 }
 
 .project {
-	margin-bottom: 50px;
+	padding-bottom: 75px;
+	padding-top: 75px;
+}
+
+.about {
+	color: green;
+	text-decoration: underline;
+
+}
+
+.pageTitle {
+	margin-top: 50px;
+}
+
+
+.profile-photo img {
+	width: 30%;
+}
+
+.profile-photo , .map , .contact , .footer {
+	text-align: center;
+}
+
+
+.about-text p {
+	margin: 20px 0px;
+}
+
+.awards {
+	padding-top: 20px;
+}
+
+.map img {
+	width: 40%;
+	position: relative;
+	margin: 20px 0px;
+}
+
+footer p {
+	color: rgb(207,207,209);
+	font-size: 12px;
+}
+
+footer {
+	text-align: center;
+	border-top: 1px rgb(207,207,209) solid;
+	padding-top: 25px;
+	margin-top: 100px;
+}
+
+.footer-logo {
+	width: 75px;
+}
+
+
+/*
+
+	h2.background {
+    position: relative;
+    z-index: 1;
+    
+   &:before {
+        border-top: 2px solid #dfdfdf;
+        content:"";
+        margin: 0 auto; 
+        position: absolute; 
+        top: 50%; left: 0; right: 0; bottom: 0;
+        width: 95%;
+        z-index: -1;
+    }
+
+    span { 
+        background: #fff; 
+        padding: 0 15px; 
+    }
+}
+*/
+
 }
