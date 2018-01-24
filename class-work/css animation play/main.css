@@ -1,0 +1,70 @@
+div {
+  display: inline-block;
+  width: 50px;
+  height: 200px;
+  background: rgb(106, 226, 216);
+}
+
+
+@keyframes changeHeight {
+  from {
+    height: 200px;
+  }
+  to {
+    height: 10px;
+  }
+}
+
+.block1 {
+  animation: 2s changeHeight infinite alternate;
+}
+
+.block2 {
+  animation: 2s changeHeight infinite alternate;
+  animation-delay: .5s
+}
+
+.block3 {
+  animation: 2s changeHeight infinite alternate;
+  animation-delay: 1s
+}
+
+.block4 {
+  animation: 2s changeHeight infinite alternate;
+  animation-delay: 1.5s
+}
+
+.block5 {
+  animation: 2s changeHeight infinite alternate;
+  animation-delay: 2s
+}
+
+.block6 {
+  animation: 2s changeHeight infinite alternate;
+  animation-delay: 2.5s
+}
+
+.block7 {
+  animation: 2s changeHeight infinite alternate;
+  animation-delay: 3s
+}
+
+.block8 {
+  animation: 2s changeHeight infinite alternate;
+  animation-delay: 3.5s
+}
+
+.block9 {
+  animation: 2s changeHeight infinite alternate;
+  animation-delay: 4s
+}
+
+.block10 {
+  animation: 2s changeHeight infinite alternate;
+  animation-delay: 4.5s
+}
+
+.block11 {
+  animation: 2s changeHeight infinite alternate;
+  animation-delay: 5s
+}
