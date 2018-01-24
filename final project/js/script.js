@@ -40,28 +40,22 @@ function NextImage(imgNum) {
 $(this).click(NextImage);
 
 
-// this doesn't work yet.. 
 
 // also I want to set up right and left buttons that you click on to select the next or previous photo
 
-  var stickyNavTop = $('.subpages').offset().top;
 
-  var stickyNav = function(){
-    var scrollTop = $(window).scrollTop();
+var nav = $(".subpages");
+    stickyDiv = "sticky";
+    yourHeader = $('header').height();
+    yourHeader = yourHeader + 20;
 
-    if (scrollTop > stickyNavTop) { 
-      $('.subpages').addClass('sticky');
-    } else {
-      $('.subpages').removeClass('sticky'); 
-    }
-  };
-
-  stickyNav();
-
-  $(window).scroll(function() {
-    stickyNav();
-  });
-
+$(window).scroll(function() {
+  if( $(this).scrollTop() > yourHeader ) {
+    nav.addClass(stickyDiv);
+  } else {
+    nav.removeClass(stickyDiv);
+  }
+});
 
 
 

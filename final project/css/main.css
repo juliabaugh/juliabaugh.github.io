@@ -70,10 +70,11 @@ h3{
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align: center;
 	position: relative;
+	color: rgb(156,172,86);
 }
 
 .pageTitle h1:before {
-    border-top: 2px solid #dfdfdf;
+    border-top: 2px solid rgb(156,172,86);
     content: "";
     margin: 0 auto;
     position: absolute;
@@ -124,7 +125,7 @@ p {
 
 .project {
 	padding-bottom: 75px;
-	padding-top: 75px;
+	padding-top: 50px;
 	border-bottom: 1px solid rgb(207,207,207);
 }
 
@@ -201,6 +202,17 @@ footer {
 span #mag-article {
 	border-top: 10px;
 }
+
+div:last-child .project {
+	border-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+div:first-child .project {
+	padding-top: 0px;
+}
+
+
 
 
 
