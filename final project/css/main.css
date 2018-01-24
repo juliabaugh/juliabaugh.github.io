@@ -27,6 +27,14 @@ nav {
 	background-color: rgba(255,255,255,.7);
 }
 
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
 
 #homepageNav {
 	width: 70%;
@@ -61,7 +69,31 @@ h3{
 .pageTitle h1 {
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align: center;
+	position: relative;
 }
+
+.pageTitle h1:before {
+    border-top: 2px solid #dfdfdf;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+
+
+    
+}
+
+span {
+    background: white;
+	padding: 0px 15px;
+    }
+
+
 
 
 .bold {
@@ -93,7 +125,7 @@ p {
 .project {
 	padding-bottom: 75px;
 	padding-top: 75px;
-	border-top: 1px solid rgb(207,207,207);
+	border-bottom: 1px solid rgb(207,207,207);
 }
 
 .about {
@@ -171,27 +203,4 @@ span #mag-article {
 }
 
 
-/*
 
-	h2.background {
-    position: relative;
-    z-index: 1;
-    
-   &:before {
-        border-top: 2px solid #dfdfdf;
-        content:"";
-        margin: 0 auto; 
-        position: absolute; 
-        top: 50%; left: 0; right: 0; bottom: 0;
-        width: 95%;
-        z-index: -1;
-    }
-
-    span { 
-        background: #fff; 
-        padding: 0 15px; 
-    }
-}
-*/
-
-}
