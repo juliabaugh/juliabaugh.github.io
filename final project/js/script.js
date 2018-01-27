@@ -72,6 +72,14 @@ $(document).ready(function(){
 //$('.mainPhoto').slick();
 
 
+$('.test').slick({
+  lazyLoad: 'ondemand',
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  arrows: true,
+  dots: true
+
+});
 
 
 
