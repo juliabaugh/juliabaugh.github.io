@@ -61,6 +61,24 @@ $(window).scroll(function() {
 
 
 
+$(document).ready(function(){
+  $('.mainPhoto').slick({
+    arrows: true,
+    accessibility: false,
+    dots: true
+  });
+});
+
+//$('.mainPhoto').slick();
+
+
+
+
+
+
+
+
+
 
 
 
