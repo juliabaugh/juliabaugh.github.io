@@ -2,14 +2,20 @@ body {
 	width: 70%;
 	margin-left: 15%;
 	margin-right: 15%;
-	background: linear-gradient(white 65%, rgba(156,172,86,.2) 100%);
+	/*background: linear-gradient(white 65%, rgba(156,172,86,.2) 100%);*/
 	font-family: 'Source Sans Pro', sans-serif;
 
+}
+
+a:visited {
+	color: inherit;
 }
 
 a:hover {
 	color: rgb(156,172,86);
 }
+
+
 
 
 nav a {
@@ -25,6 +31,12 @@ nav {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	background-color: rgba(255,255,255,.7);
+}
+
+
+.no-underline {
+	text-decoration: none;
+	color: black;
 }
 
 .sticky {
@@ -90,12 +102,14 @@ h3{
     
 }
 
-span {
+.pageTitle span {
     background: white;
 	padding: 0px 15px;
     }
 
-
+span {
+	padding: 0px;
+}
 
 
 .bold {
@@ -225,4 +239,6 @@ div:first-child .project {
     right: -40px;
 }
 
-
+.more-padding {
+	padding-top: 40px;
+}
