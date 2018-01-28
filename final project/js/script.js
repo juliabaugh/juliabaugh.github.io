@@ -72,12 +72,33 @@ $(document).ready(function(){
 //$('.mainPhoto').slick();
 
 
-$('.test').slick({
+$('#fox-island').slick({
   lazyLoad: 'ondemand',
   slidesToShow: 2,
   slidesToScroll: 1,
   arrows: true,
   dots: true
+
+});
+
+$('#epping-forest').slick({
+  lazyLoad: 'ondemand',
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  arrows: true,
+  dots: true
+});
+
+
+
+
+$('.test').slick({
+  lazyLoad: 'ondemand',
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  arrows: true,
+  dots: true,
+  adaptiveHeight: false
 
 });
 

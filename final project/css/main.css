@@ -128,15 +128,30 @@ p {
 .projectPhotos {
 	display: inline-flex;
 	margin-bottom: 20px;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .projectPhotos img {
 	width: 50%;
 	height: 50%;
-	margin-top: 10px;
-	margin-right: 5px;
 }
+
+#fox-island img {
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+}
+
+#epping-forest img {
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+}
+
+.slick-slide {
+	padding: 2px;
+}
+
 
 .project {
 	padding-bottom: 75px;
