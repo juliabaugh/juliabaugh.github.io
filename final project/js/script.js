@@ -27,27 +27,10 @@ $('.about').click(show);
 
 
 
-
-function NextImage(imgNum) {
-	var imgName = $(this).attr('src');
-	imgName = "photo" + x + ".jpg";
-	imgNum = parseInt(imgNum)
-	imgNum = imgNum + 1;
-
-	$(this).attr('src', imgName)
-}
-
-$(this).click(NextImage);
-
-
-
-// also I want to set up right and left buttons that you click on to select the next or previous photo
-
-
 var nav = $(".subpages");
     stickyDiv = "sticky";
     yourHeader = $('header').height();
-    yourHeader = yourHeader + 20;
+    //yourHeader = yourHeader + 40;
 
 $(window).scroll(function() {
   if( $(this).scrollTop() > yourHeader ) {
@@ -72,14 +55,25 @@ $(document).ready(function(){
 //$('.mainPhoto').slick();
 
 
-$('#fox-island').slick({
+$('.project-photos').slick({
   lazyLoad: 'ondemand',
   slidesToShow: 2,
   slidesToScroll: 1,
   arrows: true,
-  dots: true
-
+  dots: true,
+	responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: true
+      }
+    }
+]
 });
+
 
 $('#epping-forest').slick({
   lazyLoad: 'ondemand',

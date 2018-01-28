@@ -136,13 +136,7 @@ p {
 	height: 50%;
 }
 
-#fox-island img {
-	width: 100%;
-	height: auto;
-	margin-top: 20px;
-}
-
-#epping-forest img {
+#fox-island img, #cape-charles img, #epping-forest img, #knc img {
 	width: 100%;
 	height: auto;
 	margin-top: 20px;
@@ -175,7 +169,7 @@ p {
 
 .pageTitle {
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 
