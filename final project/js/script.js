@@ -1,31 +1,34 @@
 
-$('.hide').hide();
 
-function show (){
-	$('.hide').toggle("fast", changeText);
+// hide and unhide "about" text below each project
 
+$('.hidden').hide();
+
+$('.show-text').click(show);
+
+function show(){
+	var element = $(this).find('.hidden');
+	$(element).toggle('fast');
 }
+
 
 function changeText (){
 
-	//$('.about').html("hide");
-
-	var aboutText = $('.about').html();
+	var aboutText = $(this).find('.about');
+		aboutText = $(this).html();
 
 	if (aboutText === "hide"){
-		$('.about').html("about");
+		$(this).html("about");
 	} else {
-		$('.about').html("hide");		
+		$(this).html("hide");		
 	}
 }
 
-
-$('.about').click(show);
-
-
-// need to add a this somewhere so the action only happens to that element
+$('.about').click(changeText);
 
 
+
+//keep nav bar on top as you scroll down
 
 var nav = $(".subpages");
     stickyDiv = "sticky";
@@ -42,7 +45,7 @@ $(window).scroll(function() {
 
 
 
-
+//homepage slider
 
 $(document).ready(function(){
   $('.mainPhoto').slick({
@@ -52,8 +55,8 @@ $(document).ready(function(){
   });
 });
 
-//$('.mainPhoto').slick();
 
+//project sliders
 
 $('.project-photos').slick({
   lazyLoad: 'ondemand',
@@ -73,29 +76,6 @@ $('.project-photos').slick({
     }
 ]
 });
-
-
-$('#epping-forest').slick({
-  lazyLoad: 'ondemand',
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  arrows: true,
-  dots: true
-});
-
-
-
-
-$('.test').slick({
-  lazyLoad: 'ondemand',
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  arrows: true,
-  dots: true,
-  adaptiveHeight: false
-
-});
-
 
 
 
