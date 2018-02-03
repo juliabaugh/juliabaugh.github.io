@@ -81,10 +81,36 @@ $('.project-photos').slick({
 });
 
 
+// hamburger for mobile nav
+
+/*$(document).ready(function(){
+	$('.hamburger').click(function(){
+		$('.subpages').toggle(fast);
+	});
+});
+
+*/
+
+$('.hamburger').click(show);
+
+function show(){
+	$(nav).toggle();
+	$('.hamburger').toggleClass(green);
+}
 
 
 
 
+/* special hamburger that switches into an x
+
+$(document).ready(function(){
+	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+
+
+*/
 
 
 
