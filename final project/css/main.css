@@ -15,7 +15,9 @@ a:hover {
 	color: rgb(156,172,86);
 }
 
-
+.awards a {
+	text-decoration: none;
+}
 
 
 nav a {
@@ -57,24 +59,34 @@ nav {
 
 header {
 	text-align: center;
+	/*margin-bottom: 20px;*/
 }
 
 #logo {
-	width: 100px;
-	padding-top: 20px;
+	width: 80px;
+	padding-top: 10px;
 }
 
 h3{
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+
+.sub-logo {
+	font-size: 14px;
+	margin: 5px 0px;
+}
+
 .mainPhoto img {
 	/*overflow: hidden;*/
 	width: 100%;
+
 }
 
 .mainPhoto {
 	text-align: center;
+	max-width: 800px;
+	margin: 0 auto;
 	/*display: relative;*/
 
 }
@@ -131,16 +143,18 @@ p {
 	margin-top: 20px;
 }
 
-.projectPhotos img {
-	width: 50%;
-	height: 50%;
-}
-
-#fox-island img, #cape-charles img, #epping-forest img, #knc img, #brock-center img, #phillip-merrill img, #parks-and-people img {
+.project-photos img {
 	width: 100%;
 	height: auto;
 	margin-top: 20px;
 }
+
+/*#fox-island img, #cape-charles img, #epping-forest img, #knc img, #brock-center img, #phillip-merrill img, #parks-and-people img {
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+}
+*/
 
 .slick-slide {
 	padding: 2px;
@@ -208,6 +222,7 @@ footer {
 	border-top: 1px rgb(207,207,209) solid;
 	padding-top: 25px;
 	margin-top: 100px;
+	margin-bottom: 30px;
 }
 
 .footer-logo {
@@ -251,3 +266,39 @@ div:first-child .project {
 .more-padding {
 	padding-top: 40px;
 }
+
+
+.more-space {
+	margin-top: 120px;
+}
+
+
+.hamburger {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 24px;
+	text-align: center;
+	display: none;
+	padding-top: 10px;
+}
+
+@media screen and (max-width: 899px) {
+  .subpages span {
+    display: none;
+  }
+
+  .subpages a {
+ 	display: block;
+ 	padding: 20px 0px;
+ 	font-size: 24px;
+  }
+
+ .hamburger {
+ 	display: block;
+ }
+  
+  h1 {
+    color: blue;
+  }
+}
+
+

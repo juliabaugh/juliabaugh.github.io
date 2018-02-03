@@ -33,13 +33,16 @@ $('.about').click(changeText);
 var nav = $(".subpages");
     stickyDiv = "sticky";
     yourHeader = $('header').height();
-    //yourHeader = yourHeader + 40;
+    yourHeader = yourHeader + 20;
 
 $(window).scroll(function() {
   if( $(this).scrollTop() > yourHeader ) {
     nav.addClass(stickyDiv);
+    $('#green-consulting').addClass('more-space');
   } else {
     nav.removeClass(stickyDiv);
+    $('#green-consulting').removeClass('more-space');
+
   }
 });
 
