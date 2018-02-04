@@ -48,6 +48,7 @@ $(window).scroll(function() {
 
 
 
+
 //homepage slider
 
 $(document).ready(function(){
@@ -81,35 +82,15 @@ $('.project-photos').slick({
 });
 
 
-// hamburger for mobile nav
 
-/*$(document).ready(function(){
-	$('.hamburger').click(function(){
-		$('.subpages').toggle(fast);
-	});
-});
+//hamburger for mobile nav
 
-*/
 
 $('.hamburger').click(shownav);
 
 function shownav(){
 	$(nav).toggle();
 }
-
-
-
-
-/* special hamburger that switches into an x
-
-$(document).ready(function(){
-	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
-		$(this).toggleClass('open');
-	});
-});
-
-
-*/
 
 
 
