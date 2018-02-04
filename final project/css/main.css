@@ -84,7 +84,7 @@ h3{
 
 .mainPhoto {
 	text-align: center;
-	max-width: 800px;
+	max-width: 825px;
 	margin: 0 auto;
 	/*display: relative;*/
 
@@ -166,6 +166,11 @@ p {
 	border-bottom: 1px solid rgb(207,207,207);
 }
 
+div:last-child {
+	border-bottom: 0px;
+	padding-bottom: 0px;
+}
+
 .about {
 	color: rgb(156,172,86);
 	text-decoration: underline;
@@ -178,11 +183,6 @@ p {
 
 .grey {
 	color: rgb(130, 130, 130);
-}
-
-.pageTitle {
-	margin-top: 50px;
-	margin-bottom: 30px;
 }
 
 
@@ -241,15 +241,6 @@ span #mag-article {
 	border-top: 10px;
 }
 
-div:last-child .project {
-	border-bottom: 0px;
-	padding-bottom: 0px;
-}
-
-div:first-child .project {
-	padding-top: 0px;
-}
-
 .slick-prev:before,
 .slick-next:before {
    color: rgb(156,172,86);
@@ -268,17 +259,19 @@ div:first-child .project {
 
 
 .more-space {
-	margin-top: 120px;
+	margin-top: 80px;
 }
 
 
 .hamburger {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 24px;
-	text-align: center;
-	display: none;
-	padding-top: 10px;
+ 	display: none;
+ 	font-size: 30px;
+ 	font-family: 'Lato', sans-serif;
+ 	font-weight: bold;
+ 	padding-top: 20px;
+ 	padding-bottom: 10px;
 }
+
 
 @media screen and (max-width: 899px) {
   .subpages span {
@@ -291,11 +284,17 @@ div:first-child .project {
  	font-size: 18px;
   }
 
+
   nav {
   	/*width: 150px;*/
   	/*margin: 0 auto;*/
   	display: none;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+  }
 
+  .hamburger {
+  	display: block;
   }
 
   nav a {
@@ -306,16 +305,8 @@ div:first-child .project {
 
 }
 
-/* HAMBURGER CSS */
 
- .hamburger {
- 	display: block;
- 	font-size: 30px;
- 	font-family: 'Lato', sans-serif;
- 	font-weight: bold;
- 	padding-top: 20px;
 
- }
 
 
 

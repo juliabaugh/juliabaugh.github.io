@@ -33,15 +33,15 @@ $('.about').click(changeText);
 var nav = $(".subpages");
     stickyDiv = "sticky";
     yourHeader = $('header').height();
-    yourHeader = yourHeader + 20;
+    yourHeader = yourHeader + 15;
 
 $(window).scroll(function() {
   if( $(this).scrollTop() > yourHeader ) {
     nav.addClass(stickyDiv);
-    $('#green-consulting').addClass('more-space');
+    $('.pageTitle').addClass('more-space');
   } else {
     nav.removeClass(stickyDiv);
-    $('#green-consulting').removeClass('more-space');
+    $('.pageTitle').removeClass('more-space');
 
   }
 });
@@ -91,11 +91,10 @@ $('.project-photos').slick({
 
 */
 
-$('.hamburger').click(show);
+$('.hamburger').click(shownav);
 
-function show(){
+function shownav(){
 	$(nav).toggle();
-	$('.hamburger').toggleClass(green);
 }
 
 
