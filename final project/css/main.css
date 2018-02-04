@@ -265,7 +265,7 @@ span #mag-article {
 
 .hamburger {
  	display: none;
- 	font-size: 30px;
+ 	font-size: 20px;
  	font-family: 'Lato', sans-serif;
  	font-weight: bold;
  	padding-top: 20px;
@@ -301,5 +301,30 @@ span #mag-article {
   	justify-content: left;
   }
 
+  h1 {
+  	font-size: 20px;
+  }
+
+  .project {
+	padding-bottom: 25px;
+	padding-top: 25px;
+}
+
+ footer {
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+ .footer-logo {
+	width: 50px;
+}
+
+ .profile-photo img {
+	width: 60%;
+}
+
+ .map img {
+	width: 100%;
+}
 
 }
