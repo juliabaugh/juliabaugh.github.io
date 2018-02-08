@@ -123,6 +123,7 @@ span {
 }
 
 
+
 .bold {
 	font-weight: bold;
 }
@@ -146,6 +147,7 @@ p {
 	width: 100%;
 	height: auto;
 	margin-top: 20px;
+	max-width: 600px;
 }
 
 /*#fox-island img, #cape-charles img, #epping-forest img, #knc img, #brock-center img, #phillip-merrill img, #parks-and-people img {
@@ -227,6 +229,8 @@ footer {
 .footer-logo {
 	width: 75px;
 }
+
+
 
 .hidden {
 	margin-top: 15px;
