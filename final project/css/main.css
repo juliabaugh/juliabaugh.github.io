@@ -39,6 +39,40 @@ nav {
 }
 
 
+.tagline {
+	text-align: center;
+	padding-top: 5px;
+}
+
+.homepage-about {
+	text-align: center;
+	margin: 0% 20% 30px 20%;
+	font-size: 16px;
+}
+
+.homepage-button {
+	margin: 0 auto;
+	width: 250px;
+	margin-bottom: 50px;
+
+}
+
+.homepage-button span {
+	border: 1px black solid;
+	padding: 5px 10px;
+}
+
+.arch {
+	margin-right: 5px;
+	text-decoration: none;
+}
+
+.homepage-button span:hover {
+	background-color: rgb(156,172,86);
+	color: white;
+	border: 1px rgb(156,172,86) solid;
+}
+
 .no-underline {
 	text-decoration: none;
 	color: black;
@@ -337,6 +371,33 @@ span #mag-article {
 
  .more-space {
 	margin-top: 0px;
+}
+
+.homepage-about {
+	margin: 0px 5% 30px 5%;
+	font-size: 14px;
+}
+
+.tagline h3 {
+	font-size: 16px;
+}
+
+.slick-prev {
+	left: -25px;
+}
+
+.slick-next {
+	right: -25px;
+}
+
+body {
+	margin-left: 8%;
+	margin-right: 8%;
+	width: 84%;
+}
+
+.slick-dotted.slick-slider {
+	margin-top: 15px;
 }
 
 }
