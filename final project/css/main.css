@@ -64,13 +64,23 @@ nav {
 
 .arch {
 	margin-right: 5px;
+}
+
+.homepage-button a {
 	text-decoration: none;
+
 }
 
 .homepage-button span:hover {
 	background-color: rgb(156,172,86);
 	color: white;
 	border: 1px rgb(156,172,86) solid;
+	text-decoration: none;
+}
+
+.homepage-button a:hover {
+	color: white;
+	text-decoration: none;
 }
 
 .no-underline {
