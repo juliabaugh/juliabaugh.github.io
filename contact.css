@@ -1,0 +1,331 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+
+nav {
+  background-color: darkgrey;
+  margin: 0 auto;
+  padding: 5px 0px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0px 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: rgb(84,116,218);
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  line-height: 30px;
+  color: #777;
+  background: #efeded;
+  margin: 0px;
+  padding-bottom: 80px;
+}
+
+
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 50px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #00c4cc;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #7D2AE8;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+html { 
+  height: 100%;
+  background-color: #efeded; 
+}
+
+
+
+
+.main {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  min-height: 100%;
+  box-sizing: border-box;
+  margin-top: 50px;
+  border: 1px white solid;
+  margin-bottom: 100px;
+}
+
+header {
+    background: #00c4cc;
+    background-image: linear-gradient(139deg, #00c4cc 0%, #7D2AE8 100%);
+    color: white;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    overflow: hidden;
+    height: 120px;
+}
+
+h1 {
+    font-size: 70px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.privacy-policy {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.bold-underlined {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.cssanimation, .cssanimation span {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.oaoRotateIn span:nth-child(even) { animation-name: oaoRotateInTop }
+@keyframes oaoRotateInTop {
+    from {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+.oaoRotateIn span:nth-child(odd) { animation-name: oaoRotateInBottom }
+@keyframes oaoRotateInBottom {
+    from {
+        transform: translateY(100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+p {
+  display: inline-block;
+}
+
+
+
+.bold {
+  font-weight: bold;
+}
+
+section {
+  justify-content: center;
+  margin: 20px 20px;
+}
+
+
+article {
+  display: flex;
+  margin: 2px 0px;
+}
+
+.r3 {
+  display: none;
+  flex: 1 1 100px;
+}
+
+.r1 {
+  flex: 2 1 100px;
+  background-color: #f6f6f6;
+}
+
+.r2 {
+  flex: 1 1 100px;
+  background-color: #f6f6f6;
+}
+
+.entry {
+  box-sizing: border-box;
+  padding: 0.8em 1.2em;
+  overflow: hidden;
+  list-style: none;
+  border: solid @bw white;
+  margin: 0px 1px;
+  flex-wrap: wrap;
+}
+
+.dark-purp {
+  background-color: rgba(97, 96, 221, .3);
+}
+
+.dark-blue {
+  background-color: rgba(48, 171, 207, .3);
+}
+
+footer a {
+  height: 30px;
+  font-size: 24px;
+  color: rgb(97,96,221);
+  text-align: center;
+  text-decoration: none;
+  border: 1px rgb(97,96,221) solid;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+footer a:hover {
+  background-color: rgb(97,96,221);
+  color: white;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  background-color: white;
+  width: 100%;
+}
+
+
+.intro {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.intro h2 {
+  color: grey;
+  text-align: center;
+}

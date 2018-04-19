@@ -23,20 +23,54 @@ body {
 }
 
 header {
-	background: #00c4cc;
+    background: #00c4cc;
     background-image: linear-gradient(139deg, #00c4cc 0%, #7D2AE8 100%);
     color: white;
     text-align: center;
     font-family: 'Teko', sans-serif;
+    overflow: hidden;
 }
 
-
-
 h1 {
-	margin: 0px;
-	padding: 40px 0px;
-	display: inline-block;
-	font-size: 50px;
+    font-size: 70px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+  	margin-top: 20px;
+  	margin-bottom: 0px;
+}
+
+.privacy-policy {
+	text-align: center;
+	margin-top: 60px;
+}
+
+.bold-underlined {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.cssanimation, .cssanimation span {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.oaoRotateIn span:nth-child(even) { animation-name: oaoRotateInTop }
+@keyframes oaoRotateInTop {
+    from {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+.oaoRotateIn span:nth-child(odd) { animation-name: oaoRotateInBottom }
+@keyframes oaoRotateInBottom {
+    from {
+        transform: translateY(100px) rotate(360deg);
+        opacity: 0;
+    }
 }
 
 p {
@@ -82,12 +116,12 @@ article {
 
 .r1 {
 	flex: 2 1 100px;
-	background-color: #EEE;
+	background-color: #f6f6f6;
 }
 
 .r2 {
 	flex: 1 1 100px;
-	background-color: #EEE;
+	background-color: #f6f6f6;
 }
 
 .entry {
