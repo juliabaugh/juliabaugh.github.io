@@ -9,6 +9,20 @@ body {
 
 }
 
+.smaller {
+	font-size: 60px;
+	padding-left: 10px;
+	font-family: 'Nunito', sans-serif;
+	font-weight: thin;
+}
+
+.h1 {
+	font-size: 60px;
+	padding-right: 10px;
+	margin: 20px 0px;
+	font-family: 'Nunito', sans-serif;
+	font-weight: bolder;
+}
 
 .main {
 	width: 60%;
@@ -27,8 +41,9 @@ header {
     background-image: linear-gradient(139deg, #00c4cc 0%, #7D2AE8 100%);
     color: white;
     text-align: center;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Arial', sans-serif;
     overflow: hidden;
+    padding: 25px 0px;
 }
 
 h1 {
@@ -61,9 +76,10 @@ h1 {
 .oaoRotateIn span:nth-child(even) { animation-name: oaoRotateInTop }
 @keyframes oaoRotateInTop {
     from {
-        transform: translateY(-100px) rotate(360deg);
+    	transform: translateY(-100px) rotate(360deg);
         opacity: 0;
     }
+
 }
 .oaoRotateIn span:nth-child(odd) { animation-name: oaoRotateInBottom }
 @keyframes oaoRotateInBottom {

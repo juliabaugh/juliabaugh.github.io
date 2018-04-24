@@ -192,8 +192,9 @@ header {
     text-align: center;
     font-family: 'Teko', sans-serif;
     overflow: hidden;
-    height: 120px;
+    min-height: 120px;
 }
+
 
 h1 {
     font-size: 70px;
@@ -201,7 +202,7 @@ h1 {
     font-weight: 700;
     color: white;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 0px;
 }
 
