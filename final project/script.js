@@ -57,3 +57,15 @@ function animateRandom() {
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+
+function formcheck() {
+  var fields = $(".required-field")
+        .find("select, textarea, input").serializeArray();
+  
+  $.each(fields, function(i, field) {
+    if (!field.value)
+      alert(field.name + ' is required');
+   }); 
+  console.log(fields);
+}
