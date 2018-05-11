@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Teko:600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,600,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,600,800" rel="stylesheet">
+
+</head>
+
+<body class="contact">
+
+<header>
+  <span class=" h1 cssanimation sequence oaoRotateIn">FLIP</span><span class="smaller cssanimation sequence oaoRotateIn">DOMAINS</span><span class="trademark cssanimation sequence oaoRotateIn">&trade;</span>
+</header>
+
+<nav>
+  <a href="flipdomains.html">Home</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html">Purchase</a>
+</nav>
+
+<div class="container">  
+  <form id="contact" action="" method="post">
+    <h3>Purchase</h3>
+    <h4>To submit your offer, please use the form below. We aim to respond within 24 hours.</h4>
+    <fieldset>
+      <input class="required-field" placeholder="Your name" type="name" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input class="required-field" placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input class="required-field" placeholder="Domain Name you're interested in" type="domain" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your message here...." type="message" abindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+  </form>
+</div>
+
+<?php
+$name = $_POST['name'];
+$visitor_email = $_POST['email'];
+$domain = $_POST['domain'];
+$message = $_POST['message'];
+
+$email_from = 'jtbaugh@vt.edu';
+$email_subject = "New Form submission";
+$email_body = "You have received a new message from the user $name.\n".
+"Here is the message:\n $message".
+
+$to = "jtbaugh@vt.edu";
+$headers = "From: $email_from \r\n";
+$headers .= "Reply-To: $visitor_email \r\n";
+mail($to,$email_subject,$email_body,$headers);
+
+?>
+
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+<html>

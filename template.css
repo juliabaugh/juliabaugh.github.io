@@ -8,12 +8,18 @@ body {
 	margin: 0px;
 }
 
+.smaller {
+	font-size: 60px;
+	padding-left: 10px;
+	font-family: 'Nunito', sans-serif;
+	font-weight: thin;
+}
 
 .h1 {
 	font-size: 60px;
 	padding-right: 10px;
 	margin: 20px 0px;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: bolder;
 }
 
@@ -226,13 +232,6 @@ footer {
 	color: grey;
 	text-align: center;
 	font-size: 26px;
-}
-
-.smaller {
-	font-size: 60px;
-	padding-left: 10px;
-	font-family: 'Nunito', sans-serif;
-	font-weight: thin;
 }
 
 /* contact form css */
