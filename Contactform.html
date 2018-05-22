@@ -15,12 +15,6 @@
 <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.6082" />
 <link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.6082" />
 <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?"/>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Teko:600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300,600,800" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-        <link rel="stylesheet" type="text/css" href="main.css">
-
 <style type="text/css">
     .form-label-left{
         width:150px;
@@ -94,6 +88,58 @@ nav a:hover {
   font-weight: bolder;
 }
 
+.trademark {
+  position: absolute;
+}
+
+.cssanimation, .cssanimation span {
+    animation-duration: 7s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+.cssanimation span { display: inline-block }
+
+.oaoRotateIn span:nth-child(even) { animation-name: oaoRotateInTop }
+@keyframes oaoRotateInTop {
+    0% {
+      transform: none;
+    }
+
+    20% {
+      transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+
+    60%, 100% {
+      transform: none;
+    }
+
+}
+.oaoRotateIn span:nth-child(odd) { animation-name: oaoRotateInBottom }
+@keyframes oaoRotateInBottom {
+    0% {
+      transform: none;
+    }
+
+
+    20% {
+        transform: translateY(100px) rotate(360deg);
+        opacity: 0;
+    }
+
+    60%, 100% {
+      transform: none;
+    }
+}
+
+.smaller {
+  font-size: 60px;
+  padding-left: 10px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: thin;
+}
+
 </style>
 
 <style type="text/css" id="form-designer-style">
@@ -110,8 +156,8 @@ nav a:hover {
 JotForm.initCaptcha('input_8');
 $('input_8_reload').observe('click',function(){ JotForm.reloadCaptcha('input_8') })
       JotForm.alterTexts(undefined);
-    JotForm.clearFieldOnHide="disable";
-    JotForm.submitError="jumpToFirstError";
+	JotForm.clearFieldOnHide="disable";
+	JotForm.submitError="jumpToFirstError";
     /*INIT-END*/
 });
 
@@ -121,15 +167,13 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"contact","qid":"1","text":"Contact"
 </script>
 </head>
 <body>
-<header>
-    <span class=" h1 cssanimation sequence oaoRotateIn">FLIP</span><span class="smaller cssanimation sequence oaoRotateIn">DOMAINS</span><span class="trademark cssanimation sequence oaoRotateIn">&trade;</span>
+  <header>
+    <span class=h1>For sale!</span>
 </header>
 
 <nav>
-    <a href="flipdomains.html">Home</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="contact.html">Contact</a>
-    <a href="purchase.html">Purchase</a>
+    <a href="templatehome.html">Home</a>
+    <a href="contacttemplate.html">Purchase this Domain</a>
 </nav>
 
 <form class="jotform-form" action="https://submit.jotform.us/submit/81340958081155/" method="post" name="form_81340958081155" id="81340958081155" accept-charset="utf-8">
@@ -224,6 +268,3 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"contact","qid":"1","text":"Contact"
 </form></body>
 </html>
 <script type="text/javascript">JotForm.ownerView=true;</script>
-
-
-/* entria7@gmail.com */
